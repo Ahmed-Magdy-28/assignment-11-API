@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Weather</title>
+    </head>
+    <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-smooth-scroll="true">
+        
+        <div class="app-container  ">
+            <div class="container px-3 py-5 text-center   ">
+                <!-- search input -->
+                <input type="text" class="w-100 mx-auto rounded-5 py-3 px-4 bg-black mb-5 text-white" placeholder ="find your location... " id="search"/>
+                <div class="row g-0">
+                    
+                    <!-- TOday -->
+                    <div class="item col-md-4 bg-sec-color m-0 rounded-start-4  "id="Today">
+                        <div class="d-flex justify-content-between py-2 px-3 bg-main-color text-light rounded-start" id="todayData ">
+                            <p id="todayName" class="my-auto">sunday</p>
+                            <span>
+                                <span id="todayNumber" class="my-auto">15</span>
+                                <span id="todaymonth" class="my-auto ">January</span>
+                            </span>
+                        </div>
+                        <div id="today" class="item-content text-start px-3 py-3 pt-5 text-light">
+                            <p id="todayLocation" class="fs-4 ">cairo</p>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <span class="fs-1 fw-bolder ">
+                                    <span class="fw-bold" id="todayTemp">20</span>
+                                    <span><sup>o</sup><sup> c</sup></span>
+                                </span>
+                             <img id="todayimg" src="" alt="">
+                            </div>
+                            <p id="todayText" class="fs-6  text-light-blue ">sunny</p>
+                        </div>
+                        <div class="today-footer d-flex text-light p-3">
+                            <div class="d-flex me-3">
+                                <img src="img/icon-umberella@2x (1).png" alt="" class=" w-100 h-100  me-2 ">
+                                <p id="humidity"class="my-auto">20</p>
+                            </div>
+                            <div class="d-flex me-3">
+                                <img src="img/icon-wind@2x.png" alt="" class=" w-100 h-100  mx-2 ">
+                                <p id="wind"class="my-auto">20 km/h</p>
+                            </div>
+                            <div class="d-flex me-3">
+                                <img src="img/icon-compass@2x.png" alt="" class=" w-100 h-100 mx-2 ">
+                                <p id="windDir" class="my-auto">East</p>
+                            </div>
+                         
+                        </div>
+
+                    </div>
+                    <!-- Tomorrow -->
+                    <div class="item col-md-4 bg-sec-color m-0 bg-black" id="tomorrow">
+                        <div class=" text-center py-2 px-3 bg-sec-color text-light" id="tomorrowData ">
+                            <p id="tomorrowName" class="my-auto">s</p>
+                        </div>
+                        <div  class="item-content text-start text-center px-3 py-3 pt-5 text-light">
+                            <img src="img/icon-umberella@2x (1).png" alt="" class=" me-2  "id="tomorrowImg">
+                            <h3>
+                                <span class="fw-bold " id="tomorrowMaxTemp">20</span>
+                                <span><sup>o</sup><sup> c</sup></span>
+                            </h3> 
+                            <h5>
+                                <span class="fw-bold " id="tomorrowMinTemp">20</span>
+                                <span><sup>o</sup></span>
+                            </h5> 
+                            <p id="tomorrowtext">partly cloudy</p>
+                </div>
+            </div>
+                       <!--  next-Tomorrow -->
+                        <div class="item col-md-4 bg-sec-color m-0" id="nextTomorrow">
+                         <div class=" text-center py-2 px-3 bg-sec-color text-light" id="nextTomorrowData ">
+                                <p id="nextTomorrowName" class="my-auto">M</p>
+                         </div>
+                              <div  class="item-content text-start text-center px-3 py-3 pt-5 text-light">
+                              <img src="img/icon-umberella@2x (1).png" alt="" class=" me-2" id="nextTomorrowImg">
+                              <h3>
+                                <span class="fw-bold " id="nextTomorrowMaxTemp">20</span>
+                                <span><sup>o</sup><sup> c</sup></span>
+                              </h3> 
+                              <h5>
+                                <span class="fw-bold " id="nextTomorrowMinTemp">20</span>
+                                <span><sup>o</sup></span>
+                              </h5> 
+                              <p id="nextTomorrowtext">partly cloudy</p>
+                      </div>
+             </div>
+</div>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

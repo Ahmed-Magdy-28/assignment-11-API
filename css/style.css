@@ -1,0 +1,13 @@
+body{
+    background-image:url(../img/banner.png);
+}
+#TOday{
+    background-color:#323544 ;
+}
+
+#tomorrow{
+    background-color:#262936 ;
+}
+#nextTomorrow{
+    background-color:#323544 ;
+}
